@@ -90,7 +90,8 @@ void clear_screen(){
 int get_secret_number(int range){
     int s;
     while(1){
-        printf(P1_CLR"\n[Player 1]"RESET"ターゲット数値を設定せよ(0~%d):",range);//scanf("%d",$s)!=1は送られたものが数字ではないときを指す(1は偽であるという意味)
+        printf(P1_CLR"\n[Player 1]"RESET"ターゲット数値を設定せよ(0~%d):",range);
+        //scanf("%d",$s)!=1は送られたものが数字ではないときを指す(1は偽であるという意味)
         if(scanf("%d",&s)!=1||s<0||s>range){
             print_warning("!!! INVALID INPUT :範囲内の数値を入力せよ !!!");
             //sに入ってしまった文字列をバッファクリアする

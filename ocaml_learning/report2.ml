@@ -37,4 +37,3 @@ else if n mod 2 =0 then
 else
  n :: collatz_path (3 * n + 1)
 ;;
- 

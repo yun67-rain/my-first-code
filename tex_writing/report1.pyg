@@ -1,0 +1,6 @@
+        match x with
+        [] -> false
+        |h :: t ->
+         if h = a then true
+         else checkl a t
+        ;;

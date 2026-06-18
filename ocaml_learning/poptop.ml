@@ -1,3 +1,5 @@
+exception Empty ;;
+
 let create () = [];;
 
 let push st x = x :: st;;
